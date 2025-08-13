@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="01_login_nodes/">
+      
       
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
@@ -58,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction" class="md-skip">
+        <a href="#introduction-what-is-high-performance-computing" class="md-skip">
           Skip to content
         </a>
       
@@ -215,6 +217,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="01_login_nodes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Login Nodes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -249,7 +273,29 @@
 
 
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="introduction-what-is-high-performance-computing">Introduction: What is High Performance Computing?</h1>
+<p>High Performance Computing (HPC) refers to the practice of using many computer processors simultaneously to solve problems that would take too long, or be outright impossible, on a single, standard computer. In other words, it is the science of <em>supercomputing</em>. HPC systems allow researchers, engineers, and analysts to run massive simulations, process huge datasets, and perform advanced modeling that drives discoveries in fields such as climate science, astrophysics, genomics, materials engineering, and artificial intelligence.</p>
+<p>At its core, an HPC system is made up of a group of interconnected computers, known collectively as a <strong>cluster</strong>. Each individual computer within the cluster is called a <strong>node</strong>. A node contains its own processors, memory, storage, and networking hardware, along with an operating system (OS) that enables it to run software and communicate with other nodes.</p>
+<p>The way these nodes work together is key to HPC performance. By dividing a large problem into smaller parts and processing them in parallel across multiple nodes, the system can achieve results thousands or millions of times faster than a single machine. This approach is known as <strong>parallel computing</strong> and is a defining feature of HPC.</p>
+<p>In most HPC environments, computing resources are categorized into <strong>login nodes</strong> and <strong>compute nodes</strong>:</p>
+<ul>
+<li>
+<p><strong>Login nodes:</strong></p>
+<ul>
+<li>These are entry points to the cluster. Users typically connect to login nodes using Secure Shell (SSH) from their personal or work computer. These nodes are not designed to handle heavy computational tasks; instead serving as a workspace for preparing to send tasks to other sections of the cluster. On login nodes, you can typically create and edit scripts, move and organize files, load necessary software modules, and submit jobs to the system's scheduler. There are usually only a few login nodes, and they can be shared by many users at once.</li>
+</ul>
+</li>
+<li>
+<p><strong>Compute nodes:</strong></p>
+<ul>
+<li>These are the stars of an HPC system. Compute nodes are where the actual intensive computations or simulations are run. They typically are much more powerful than a standard desktop, often equipped with multiple CPUs (central processing units), large amounts of memory, and sometimes specialized hardware like GPUs (graphics processing units). Users do not log in to compute nodes directly, instead they request an <strong>interactive session</strong> from a login node to run commands in real time, or they submit jobs to a <strong>batch queue</strong> managed by a scheduler such as Slurm or HTCondor.</li>
+</ul>
+</li>
+</ul>
+<p>This separation of roles ensures that login nodes remain responsive for all users while compute nodes are fully dedicated to processing workloads. By scaling up to hundreds or thousands of compute nodes, an HPC system can tackle computations at speeds measured in trillions of operations per second - well beyond what a typical computer could achieve.</p>
+<p>In this lesson, we're going to go over how to access login nodes, how to queue batch jobs, and how to find help if you run into issues. If this is your first time reading technical documentation, we recommend you to take a few minutes to go through our <a href="https://det-lab.github.io/reading-documentation/">lesson on understanding technical documentation</a> before continuing. </p>
+<hr />
+<p><a href="01_login_nodes/">Click here</a> to continue to the next section where we will explain how to access login nodes.</p>
 
 
 
