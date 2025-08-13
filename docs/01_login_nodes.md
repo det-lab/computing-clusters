@@ -1,7 +1,7 @@
 # Login Nodes
 Login nodes serve as the "front door" to the system; they provide a safe environment for preparing jobs, moving files, loading software, and submitting work to the scheduler. They are not intended for heavy computation, so it's important to use them only for lightweight tasks. Most HPC systems provide two main ways to access a login node:
 
-1. **Web Browser Access**
+## 1. **Web Browser Access**
 
 Some clusters have browser-based online portals or web clients where you can log in using your HPC credentials. These portals often present you with tools like JupyterLab/Notebook, RStudio, or graphical file managers. Many also provide a browser-based terminal for command-line work.
     
@@ -19,7 +19,7 @@ Some clusters have browser-based online portals or web clients where you can log
 
     * Features may be limited to what the web interface provides.
 
-2. **Secure Shell (SSH)**
+## 2. **Secure Shell (SSH)**
 
 This is the most common method for connecting to HPCs. If you are unfamiliar with SSH, we recommend you to take a few minutes to read through [this lesson](https://hsf-training.github.io/hsf-training-ssh-webpage/01-introduction/index.html). It is also possible to use SSH with an integrated development environment (IDE), such as Visual Studio Code, Spyder, or Jupyter.
 
