@@ -1,6 +1,7 @@
 site_name: Understanding Computing-Clusters
 nav:
   - Introduction: index.md
+  - Login Nodes: 01_login_nodes.md
 
 theme: 
   name: material
