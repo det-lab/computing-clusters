@@ -21,4 +21,4 @@ In this lesson, we're going to go over how to access login nodes, how to queue b
 
 ---
 
-[Click here](01_login_nodes.md) to continue to the next section where we will explain how to access login nodes.
+[Click here](01_nodes_and_jobs.md) to continue to the next section where we will explain how to access login nodes.
